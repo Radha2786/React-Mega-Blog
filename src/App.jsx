@@ -26,15 +26,7 @@ function App() {
 
 
 return !loading ? (
-  <>
-  <Editor
-      apiKey='lsdwj22tz40d1pedrd5oaafnbth4381wofxm3ld2qh2pqqik'
-      init={{
-        plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount linkchecker',
-        toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
-      }}
-      initialValue="Welcome to TinyMCE!"
-    />
+  
   <div className="min-h-screen flex flex-wrap content-between bg-fuchsia-100">
     <div className="w-full block">
       <Header/>
@@ -45,7 +37,7 @@ return !loading ? (
 
     </div>
   </div>
-  </>
+  
 ) : <h1>Loading...</h1>
 }
 

@@ -13,6 +13,7 @@ export default function RTE({ name, control, label, defaultValue = "" }) {
         // kese element render krte hai
         render={({ field: { onChange } }) => (  // is field k andar jo bhi change hota hai vo mujhe inform kar dena
           <Editor
+            apiKey='lsdwj22tz40d1pedrd5oaafnbth4381wofxm3ld2qh2pqqik'
             initialValue={defaultValue}
             init={{
               initialvalue: defaultValue,
@@ -54,5 +55,5 @@ export default function RTE({ name, control, label, defaultValue = "" }) {
 
 // note :
 // onEditorChange: This is a prop provided by the TinyMCE Editor component. It expects a function to be passed to it, which will be called whenever the content of the editor changes.
-// So, when the content of the TinyMCE editor changes, the onEditorChange prop is triggered, and it calls the onChange function provided by react-hook-form. This, in turn, updates the 
+// So, when the content of the TinyMCE editor changes, the onEditorChange prop is triggered, and it calls the onChange function provided by react-hook-form. This, in turn, updates the
 // form state with the new content of the editor. This ensures that the content of the TinyMCE editor is properly integrated with the form state managed by react-hook-form, allowing you to submit the form with the updated content.
