@@ -80,7 +80,7 @@ function Login() {
 
 
             </div>
-            Login</div>
+            </div>
     )
 }
 

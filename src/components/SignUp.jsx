@@ -45,15 +45,15 @@ function SignUp() {
                 </p>
                 {error && <p className='text-red-600 mt-8 text-center'>{error}</p>}
 
-                <form className='grid gap-3 grid-cols-4 ' onSubmit={handleSubmit(create)}>
-                    <input className='rounded-lg'
+                <form className='flex flex-col ' onSubmit={handleSubmit(create)}>
+                    <input className='rounded-lg m-2 p-2'
                         label='full Name: '
                         placeholder='enter name'
                         {...register("name",{
                             required:true,
                         })}
                         />
-                    <input className='rounded-lg'
+                    <input className='rounded-lg m-2 p-2'
                         type='Email'
                         label='Email'
                         placeholder='enter mail'
@@ -63,7 +63,7 @@ function SignUp() {
                        
 
                     />
-                    <input className='w-40 rounded-lg '
+                    <input className=' rounded-lg m-2 p-2'
                         type='password'
                         label='password'
                         placeholder='enter password'
@@ -71,7 +71,7 @@ function SignUp() {
                             required:true,
                         })}
                         />
-                     <Button type="submit" className="w-full">
+                     <Button type="submit" className="m-2">
                             Create Account
                         </Button>
 
